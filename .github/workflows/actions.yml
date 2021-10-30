@@ -1,6 +1,14 @@
 name: Actions Workflow
 on:
-  - push
+  repository_dispatch:
+    types:
+      - build
+  push:
+  pull_request:
+    types:
+      - closed
+      - assigned
+      - opened
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
