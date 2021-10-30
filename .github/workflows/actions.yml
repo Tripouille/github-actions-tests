@@ -4,6 +4,8 @@ on:
     types:
       - build
   push:
+    branches:
+      - master
   pull_request:
     types:
       - closed
