@@ -1,0 +1,19 @@
+name: matrix
+on: push
+jobs:
+  node-version:
+    strategy:
+      matrix:
+        node_version:
+          - 6
+          - 8
+          - 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: log node version
+        run: node -v
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node_version }}
+      - name: log node version
+        run: node -v
