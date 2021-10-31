@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format:check": "npx prettier -c **/*.{js,jsx,ts,tsx,yml,yaml,json,css,scss,md}",
-    "format:write": "npx prettier -w **/*.{js,jsx,ts,tsx,yml,yaml,json,css,scss,md}"
+    "format:write": "npx prettier -w **/*.{js,jsx,ts,tsx,yml,yaml,json,css,scss,md}",
+    "husky": "husky install"
   },
   "eslintConfig": {
     "extends": [
