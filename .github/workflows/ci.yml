@@ -32,6 +32,11 @@ jobs:
       - name: Build Project
         if: github.event_name == 'push'
         run: npm run build
+      - name: Create assets
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: |
+          zip -r build.zip ./build
+          zip -r coverage.zip ./coverage
       - name: Create a release
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx semantic-release
