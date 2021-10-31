@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/Tripouille/github-actions-tests/branch/master/graph/badge.svg?token=L1Z6QHUR4B)](https://codecov.io/gh/Tripouille/github-actions-tests)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
