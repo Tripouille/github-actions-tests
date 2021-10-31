@@ -1,7 +1,7 @@
 module.exports = {
   branches: "master",
   repositoryUrl: "https://github.com/Tripouille/github-actions-tests",
-  Plugins: [
+  plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
