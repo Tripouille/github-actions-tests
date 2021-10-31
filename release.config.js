@@ -10,6 +10,7 @@ module.exports = {
         assets: [
           { path: "build.zip", label: "Build" },
           { path: "coverage.zip", label: "Coverage" },
+          { path: "README.md", label: "Readme" },
         ],
       },
     ],
